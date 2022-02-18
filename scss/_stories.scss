@@ -1,0 +1,53 @@
+.stories{
+    background: rgba(0,0,0,0.4) url('../img/bg_testimonials.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.stories-container{
+    padding: 6rem 1rem;
+    
+    @include md{
+        padding-right: 35rem;
+    }
+    @include lg{
+        padding-right: 45rem;
+    }
+    @include lg{
+        padding-right: 55rem;
+    }
+
+    
+}
+
+.stories-header{
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.stories-quote{
+    font-size: 1.6rem;
+    font-style: italic;
+    display: inline-block;
+    margin-top: 4rem;
+    color: white;
+    line-height: 2.5rem;
+}
+
+.stories-author{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.stories-btn{
+    padding: 1rem 2.4rem;
+    border-radius: 50rem;
+    font-size: 1.6rem;
+    border: 2px solid white;
+    background-color: transparent;
+    color:white;
+}

@@ -1,0 +1,79 @@
+.contact-img{
+    width:100%;
+    height:auto;
+    display: block;
+    margin-bottom: 2rem;
+
+}
+
+.contact-container{
+    padding:10rem 0rem;
+
+    @include lg{
+    display: flex;
+    margin:auto;
+    width:80%;
+    gap: 5rem;
+    }
+
+
+}
+
+.contact-label{
+    display:block;
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+
+    @include lg{
+        font-size: 1.2rem;
+    }
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    font-weight: 400;
+    color: $header-grey;
+
+    @include lg{
+        font-size: 5rem;
+    }
+}
+
+.contact-input{
+    height: 4rem;
+    border: 1px solid $border-color;
+    border-radius: 0.45rem;     
+}
+
+.contact-textarea{
+    border: 1px solid $border-color;
+    border-radius: 0.45rem;   
+}
+
+.form-btn{
+    padding: 1rem 2.4rem;
+    margin-top: 2.2rem;
+    margin-right: auto;
+    font-size: 1.8rem;
+    background-color:$blue;
+    border:none;
+    border-radius: 0.5rem;
+    color:white;
+
+    &:hover{
+        background-color: #1737f1;
+        box-shadow: 0 4px 12px rgb(61 88 243 / 30%);
+    }    
+    
+
+    @include lg{
+        font-size: 1.4rem;
+    }
+    
+}

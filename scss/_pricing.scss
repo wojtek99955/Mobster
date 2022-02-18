@@ -1,0 +1,154 @@
+.pricing{
+    background-image: url(../img/pattern_2.svg);
+    background-size: cover;
+}
+
+.pricing-header{
+    font-size: 4.5rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    color: $header-grey;
+}
+
+.pricing-description{
+    font-size: 1.5rem;
+    line-height:2rem;
+    margin-bottom: 4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color:$black;
+}
+
+.pricing-btn{
+    padding:1rem 2.4rem;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    border-radius: 50rem;
+    background: linear-gradient(45deg, #3D58F3, #9548F9);
+    border: none;
+    font-size: 1.8rem;
+    color:white;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgb(56 51 64 / 30%);
+    }
+    
+
+}
+
+.pricing-boxes{
+    display: flex;
+    flex-direction: column;
+
+    @include md{
+        flex-direction: row ;
+        justify-content: center;
+        gap:2rem;
+    }
+}
+
+
+
+.plan{
+    align-self: center;
+    padding: 6rem 10rem 8rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(56 51 64 / 19%);
+
+    @include lg{
+        padding-right: 4rem;
+    }
+
+    .pricing-item{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $black;
+        list-style: none;
+        white-space: nowrap;
+    }
+}
+
+.plan-name{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $black;
+}
+
+.plan-price{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.pricing-plan{
+    h2{
+        font-size: 4rem;
+    };
+    &__business{
+        background-image: url(../img/pricing_pattern.svg);
+        background-size: cover;
+        margin-bottom: 2.5rem;
+
+        .plan-price{
+            color: #602FDA;
+        }
+        
+        @include md{
+            margin-bottom: 8rem;
+        }
+        @include lg{
+            position: relative;
+            top: -5rem;
+        }
+
+        i{
+            color:$purple;
+            margin-right: 1rem;
+        }
+    }
+    &__starter{
+        background-image: url(../img/pricing_pattern_grayscale.svg);
+        background-size: cover;
+        margin-bottom: 8rem;
+        
+
+        i{
+            margin-right:1rem;
+        }
+    }
+}
+
+.plan-btn{
+    margin-top: 3rem;
+    padding: 1rem 2.4rem;
+    border: none;
+    background-color: $black;
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+
+    &:hover{
+        box-shadow: 0 4px 12px rgb(56 51 64 / 30%);
+        background-color: #242129;
+        cursor: pointer;
+    }
+}
+
+
+
+.pricing-container{
+
+    margin-top:10rem;
+
+    @include lg{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+
+
+
+   
+    }
+}

@@ -1,0 +1,96 @@
+.opening{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    
+
+}
+
+.opening::before{
+    content: '';
+    background-image: url(../img/bg_hero_1.svg);
+    background-size: cover;
+    background-position: center center;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 0;
+}
+
+.opening-container{
+    display: flex;
+    gap:20rem;
+    align-items: center;
+    position:relative;
+    z-index: 1;
+
+    h1{
+        font-size: 5.7rem;
+        font-weight: 500;
+        color: $black;
+    }   
+    h3{
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding-top: 2.5rem;
+        margin-bottom: 1rem;
+        color: $black;
+    }
+    h2{
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding-top: 2rem;
+        color: $black;
+        line-height: 2rem;
+    }
+
+}
+
+.opening-btn{
+    margin-top: 4rem;
+    padding: 1rem 2.4rem;
+    border:none;
+    color:white;
+    background-color: $blue;
+    border-radius: 50rem;
+    font-size: 1.6rem;
+
+    &:hover{
+        background-color: #1737f1;
+        box-shadow: 0 4px 12px rgb(61 88 243 / 30%);
+
+    }
+}
+
+.opening-img{
+    display: none;
+
+    @include lg{
+        width:18rem;
+        display: block;
+        animation-name: image;
+        animation-duration: 2s;
+        // animation-iteration-count: infinite;
+        // animation-direction:alternate-reverse;
+        // animation-timing-function: linear;
+        animation: 2500ms linear infinite alternate-reverse image;
+    }
+
+     @include xl{
+        width:20rem;
+    }
+}
+
+@keyframes image {
+
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+    
+}

@@ -1,0 +1,35 @@
+.customers-container{
+    margin: 14rem 0;
+    margin:auto;
+
+    @include md{
+        display: grid;
+        grid-template-columns: 18rem 18rem;
+        justify-content: center;
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        row-gap:4rem;
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    @include lg{
+        grid-template-columns: 1fr 320px 1fr 1fr;
+    }
+
+}
+.customers-img{
+    display: block;
+    margin:auto;
+    width:15rem;
+    margin-bottom: 5rem;
+    @include md{
+        width:18rem;
+    }
+    @include lg{
+        width:15rem;
+    }
+
+
+
+}
